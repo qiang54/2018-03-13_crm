@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <!-- Add packages here -->
+	
+	<package name="crm" namespace="/" extends="struts-default">
+		<!-- 用户模块-->
+		<!-- 模式驱动   -->
+		<action name="customer_*" class="com.test.action.CustomerAction"  method="{1}"/>
+		
+	</package>
+	
+</struts>
